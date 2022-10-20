@@ -1,0 +1,72 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+  }
+  
+  body {
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(221, 239, 255);
+    display: grid;
+    place-items: center;
+    font-family: cursive;
+    font-weight: bold;
+  }
+  
+  h3 {
+    position: absolute;
+    text-align: center;
+    top: 20px;
+  }
+  
+  /* Main Style Stars from here  */
+  .flag {
+    position: relative;
+    width: 300px;
+    height: 200px;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+  }
+  
+  .united_states {
+    background: repeating-linear-gradient(
+      #b22234,
+      #b22234 7.7%,
+      #fff 7.7%,
+      #fff 15.4%
+    );
+  }
+  
+  .united_states__top_left {
+    background: #3c3b6e;
+    height: 54%;
+    width: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .united_states__stars_col {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .united_states__star {
+    height: 10px;
+    aspect-ratio: 1;
+    background: white;
+    clip-path: polygon(
+      50% 0%,
+      61% 35%,
+      98% 35%,
+      68% 57%,
+      79% 91%,
+      50% 70%,
+      21% 91%,
+      32% 57%,
+      2% 35%,
+      39% 35%
+    );
+  }

@@ -1,0 +1,49 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+  }
+  
+  body {
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(221, 239, 255);
+    display: grid;
+    place-items: center;
+    font-family: cursive;
+    font-weight: bold;
+  }
+  
+  h3 {
+    position: absolute;
+    text-align: center;
+    top: 20px;
+  }
+  
+  /* Main Style Stars from here  */
+  .flag {
+    position: relative;
+    width: 300px;
+    height: 200px;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+  }
+  .brazil {
+    background-color: #009c37;
+    display: grid;
+    place-items: center;
+  }
+  
+  .brazil__diamond {
+    background-color: #fde000;
+    width: 80%;
+    height: 70%;
+    clip-path: polygon(51% 0%, 100% 50%, 51% 100%, 0% 50%);
+    /* transform: skew(-10deg, -10deg) rotate(45deg); */
+  }
+  
+  .brazil__logo {
+    position: absolute;
+    inset: 0;
+    width: 80px;
+    margin: auto;
+  }
